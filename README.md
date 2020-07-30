@@ -1,5 +1,5 @@
 ### Hi there 👋
-![GitHub Logo](http://pngimg.com/uploads/github/github_PNG20.png)
+![banner](./banner.png)
 <!--
 **abarbaneld/abarbaneld** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
