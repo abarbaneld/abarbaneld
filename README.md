@@ -1,4 +1,4 @@
-![banner](https://github.com/abarbaneld/abarbaneld/blob/master/banner.png)
+![banner](https://github.com/abarbaneld/abarbaneld/blob/master/banner2.png)
 Whats up my padawans! I've been programming for quite some time now, I have worked with a variety of programming languages. Pascal, QBasic, Apple Basic, C, Ruby, Python, TCL, Perl, Bash, Groovy, Java and Javascript to name a few.  
   
 I have to admit my favorite language by far has been Javascript. My latest endeavor has been using Vue.js with Vuetify to build rapid application prototypes. I have experience with creating microservices and setting up CI/CD pipelines along with my normal duties.  
