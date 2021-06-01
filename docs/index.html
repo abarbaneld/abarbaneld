@@ -9,7 +9,7 @@
     <script>
       document.getElementById("submit").addEventListener("click", function() {
         try {
-          document.getElementById("output").innerHTML = JSON.parse(document.getElementById("input").value);
+          document.getElementById("output").innerHTML = JSON.parse(document.getElementById("input").value, null, 2);
         } catch(e){
           document.getElementById("output").innerHTML = e;
         }
