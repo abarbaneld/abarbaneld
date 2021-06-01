@@ -5,9 +5,15 @@
   <body>
     <textarea id="input"></textarea>
     <div id="output">No Output</div>
-    <button id="submit"></button>
+    <button id="submit">Convert</button>
     <script>
-      alert('Welcome to the Parser');
+      document.getElementById("submit").addEventListener("click", function() {
+        try {
+          document.getElementById("output").innerHTML = JSON.parse(document.getElementById("input").value);
+        } catch(e){
+          document.getElementById("output").innerHTML = e;
+        }
+      });
     </script>
   </body>
 </html>
