@@ -4,15 +4,15 @@
   </head>
   <body>
     <textarea id="input"></textarea>
-    <pre id="output">
-    No Output
-    </pre>
-    <button id="submit">Convert</button>
+    <pre id="output"> No Output </pre>
+    <button id="submit"> Convert </button>
     <script>
       document.getElementById("submit").addEventListener("click", function() {
         try {
-          document.getElementById("output").innerHTML = JSON.stringify(JSON.parse(document.getElementById("input").value), null, 2);
-        } catch(e){
+          var value = document.getElementById("input").value
+          var parsed = JSON.parse(value);
+          document.getElementById("output").innerHTML = parsed
+        } catch (e) {
           document.getElementById("output").innerHTML = e;
         }
       });
