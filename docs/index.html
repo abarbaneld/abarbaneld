@@ -13,6 +13,9 @@
   <div id="app">
     <v-app>
       <v-main>
+        <v-appbar color="blue" blue>
+          <v-appbar-title>String Parser</v-appbar-title>
+        </v-appbar>
         <v-container>
           <v-row>
             <v-col>
@@ -36,16 +39,15 @@
       vuetify: new Vuetify(),
       data() {
         return {
-          input: "",
-          output: "",
+          input: ""
         }
       },
       computed:{
-        out(){
+        output(){
           try {
-            return JSON.stringify(JSON.parse(this.input),null,4);
+            return JSON.parse(this.input);
           }catch(e){
-            return e;
+            return "No JSON to Output";
           }
         }
       }
