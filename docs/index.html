@@ -1,21 +1,51 @@
 <html>
-  <head>
-    <title> Parser</title>
-  </head>
-  <body>
-    <textarea id="input"></textarea>
-    <pre id="output"> No Output </pre>
-    <button id="submit"> Convert </button>
-    <script>
-      document.getElementById("submit").addEventListener("click", function() {
-        try {
-          var value = document.getElementById("input").value
-          var parsed = JSON.parse(value);
-          document.getElementById("output").innerHTML = parsed
-        } catch (e) {
-          document.getElementById("output").innerHTML = e;
+
+<head>
+  <title> Parser</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+
+<body>
+  <div id="app">
+    <v-app>
+      <v-main>
+        <v-container>
+          <v-textarea> v-model="input"</v-textarea>
+          <pre v-text="output"></pre>
+          <v-btn @click="parse">Submit</v-btn>
+        </v-container>
+      </v-main>
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+      data() {
+        return {
+          input: "",
+          output: "",
         }
-      });
-    </script>
-  </body>
+      },
+      methods: {
+        parse() {
+          try {
+            let parsed = JSON.parse(this.input);
+            this.output = parsed;
+          } catch (e) {
+            this.output = e;
+          }
+        }
+      }
+    })
+  </script>
+</body>
+
 </html>
