@@ -37,8 +37,8 @@
       methods: {
         parse() {
           try {
-            let parsed = JSON.parse(this.input);
-            this.output = parsed;
+            //let parsed = JSON.parse(this.input);
+            this.output = this.input;
           } catch (e) {
             this.output = e;
           }
