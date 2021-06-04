@@ -14,7 +14,8 @@
     <v-app>
       <v-main>
         <v-container>
-          <v-textarea> v-model="input"</v-textarea>
+          <v-text-field v-model="input" label="JSON"/>
+          <v-textarea v-model="input"</v-textarea>
           <pre v-text="input"></pre>
           <v-btn @click="parse">Submit</v-btn>
         </v-container>
