@@ -15,12 +15,15 @@
       <v-main>
         <v-app-bar color="blue" dark>
           <v-app-bar-title>String Parser</v-app-bar-title>
+          <v-spacer></v-spacer>
+          <v-btn icon>
+            <v-icon>mdi-calculator-variant</v-icon>
+          </v-btn>
         </v-app-bar>
         <v-container>
           <v-row>
             <v-col>
-              <v-text-field v-model="input" label="JSON"></v-text-field>
-              <v-textarea v-model="input"></v-textarea>    
+              <v-textarea v-model="input" label="JSON"></v-textarea>    
             </v-col>
             <v-col>
               <code v-html="output"></code>
