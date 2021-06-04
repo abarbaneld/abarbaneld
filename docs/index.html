@@ -14,10 +14,20 @@
     <v-app>
       <v-main>
         <v-container>
-          <v-text-field v-model="input" label="JSON"/>
-          <v-textarea v-model="input"></v-textarea>
-          <div v-text="input"></div>
-          <v-btn @click="parse">Submit</v-btn>
+          <v-row>
+            <v-col>
+              <v-text-field v-model="input" label="JSON"></v-text-field>
+              <v-textarea v-model="input"></v-textarea>    
+            </v-col>
+            <v-col>
+              <div v-text="input"></div>
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-col>
+              <v-btn @click="parse">Submit</v-btn>
+            </v-col>
+          </v-row>
         </v-container>
       </v-main>
     </v-app>
