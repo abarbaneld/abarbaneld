@@ -20,7 +20,7 @@
               <v-textarea v-model="input"></v-textarea>    
             </v-col>
             <v-col>
-              <code v-html="input"></code>
+              <code v-html="out"></code>
             </v-col>
           </v-row>
           <v-row>
@@ -43,6 +43,11 @@
         return {
           input: "",
           output: "",
+        }
+      },
+      computed:{
+        out(){
+          return JSON.stringify(JSON.parse(this.input),null,4)
         }
       },
       methods: {
