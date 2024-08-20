@@ -1,4 +1,4 @@
-![banner](https://github.com/abarbaneld/abarbaneld/blob/master/banner2.png)
+![banner](https://github.com/abarbaneld/abarbaneld/blob/master/banner3.png)
 Welcome to my little area on Github. I have been programming most of my life now, I have used a variety of programming languages such as Pascal, QBasic, C, C++, Ruby, Python, TCL, Perl, Bash, Groovy, Java, Javascript, Go and Rust.
   
 I have to admit my favorite language today is Go. My latest endeavor has been using Vue.js with Vuetify to build rapid application prototypes with a Go webserver backend. I have experience with creating microservices and setting up CI/CD pipelines along with my normal duties.
